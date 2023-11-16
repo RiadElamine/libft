@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 21:31:33 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/11 11:44:53 by relamine         ###   ########.fr       */
+/*   Created: 2023/11/12 12:33:25 by relamine          #+#    #+#             */
+/*   Updated: 2023/11/13 02:33:02 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t ft_strlen(const char *s)
+char    *ft_strmapi(char const *s, char (*f)( unsigned int, char))
 {
-    size_t     i;
+    unsigned  int i;
 
+    if(!s)
+        return 0;
+    char *j = malloc(ft_strlen(s) + 1);
+    if (!j)
+        return 0;
     i = 0;
-    while (s[i] != '\0')
+    while(s[i])
     {
+        j[i] = f(i, s[i]);
         i++;
     }
-    return (i);
+    j[i] = '\0';
+    return (j);
 }
-// #include <stdio.h>
-// int main(){
-//     const char s[] = "";
-//     const char *p = s;
-//     int c = 't';
-//     printf("%s \n", ft_strrchr(p, c));
-// }

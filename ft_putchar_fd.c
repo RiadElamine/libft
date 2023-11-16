@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 21:31:33 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/11 11:44:53 by relamine         ###   ########.fr       */
+/*   Created: 2023/11/10 18:15:17 by relamine          #+#    #+#             */
+/*   Updated: 2023/11/14 12:30:15 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t ft_strlen(const char *s)
-{
-    size_t     i;
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        i++;
-    }
-    return (i);
+void ft_putchar_fd(char c, int fd)
+{
+        write(fd, &c, 1);
 }
-// #include <stdio.h>
-// int main(){
-//     const char s[] = "";
-//     const char *p = s;
-//     int c = 't';
-//     printf("%s \n", ft_strrchr(p, c));
+// int main()
+// {
+// int fd = open("foo.txt", O_CREAT | O_WRONLY , 0777);
+
+
+// ft_putchar_fd('h', fd);
+
+// close(fd);
+// return 0;
 // }

@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:25:35 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/06 23:35:39 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/11 12:29:06 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,3 @@ void * ft_calloc(size_t count, size_t size)
     return (ptr);
 }
 
-// int main ()
-// {
-//     printf("%s", ft_calloc(5 , sizeof(char)));
-// }

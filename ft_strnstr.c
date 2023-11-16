@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 23:15:57 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/08 16:40:30 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/11 11:05:31 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,18 @@
 
 char *ft_strnstr(const char *str, const char *find, size_t len)
 {
-    int i;
-    int b;
-    size_t len2;
+    size_t b;
 
-    i = 0;
-	if (!str || !len)
-		return (NULL);
-    if (find[i] == '\0' || (int)len < 0)
-        return ((char *)str);
-    while (*str && len > 0)
+    if(!str && !len)
+        return (0);
+
+    if(!*find)
+        return((char *)str);
+
+    while (*str && len != 0)
     {  
         b = 0;
-        len2 = len;
-        while (str[b] == find[b] && find[b] != '\0' && (int)len2 > b)
+        while (str[b] == find[b] && find[b] != '\0' && len > b)
         {
             b++;
         }
@@ -41,9 +39,9 @@ char *ft_strnstr(const char *str, const char *find, size_t len)
 }
 
 
-int main()
-{
-    // char haystack[30] = "aaabcabcd";
-    char needle[10] = "aabc";
-    printf("%s", ft_strnstr((const char *)"", needle, -2));
-}
+// int main()
+// {
+//     // char haystack[30] = "aaabcabcd";
+//     // char needle[10] = "aabc";
+//     printf("%s", ft_strnstr(NULL, "aabc", -1));
+// }
