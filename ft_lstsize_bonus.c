@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 14:35:56 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/20 19:34:13 by relamine         ###   ########.fr       */
+/*   Created: 2023/11/19 04:06:04 by relamine          #+#    #+#             */
+/*   Updated: 2023/11/22 17:08:42 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+int	ft_lstsize(t_list *lst)
 {
-	char	*s2;
-	int		i;
+	int	count;
 
-	s2 = malloc(sizeof(char) * (ft_strlen(s1) + 1));
-	if (!s2)
+	count = 0;
+	if (!lst)
 		return (0);
-	i = 0;
-	while (s1[i])
+	while (lst)
 	{
-		s2[i] = s1[i];
-		i++;
+		count++;
+		lst = lst->next;
 	}
-	s2[i] = '\0';
-	return (s2);
+	return (count);
 }

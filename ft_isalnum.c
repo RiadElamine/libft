@@ -6,12 +6,12 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:47:58 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/07 15:15:57 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/17 03:10:49 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
+
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
