@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 05:16:42 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/25 22:30:20 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/29 01:53:20 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (!(*lst) && new)
 		*lst = new;
-	else if (!new)
-		return ;
 	else
 	{
 		last = ft_lstlast(*lst);

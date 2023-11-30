@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:10:42 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/17 04:04:05 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:59:13 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (*s != '\0')
 	{
-		if ((unsigned char)c == (unsigned char )*s)
+		if ((char)c == *s)
 			return ((char *)(s));
 		s++;
 	}

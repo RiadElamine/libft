@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:27:26 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/26 06:03:16 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 21:02:06 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)(s + la));
 		la--;
 	}
-	return (0);
+	return (NULL);
 }

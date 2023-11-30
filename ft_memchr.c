@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:01:14 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/17 03:18:02 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 21:05:11 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *voids, int c, size_t size)
 			return ((void *)(ptr + i));
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 17:48:32 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/17 01:24:29 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/29 02:04:37 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *voidptr, int value, size_t count)
 	charptr = (unsigned char *)voidptr;
 	while (i < count)
 	{
-		charptr[i] = (unsigned char)(value); 
+		charptr[i] = (unsigned char)(value);
 		i++;
 	}
 	return (voidptr);

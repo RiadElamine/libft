@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 14:35:56 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/20 19:34:13 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:59:49 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s1)
 
 	s2 = malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (!s2)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (s1[i])
 	{

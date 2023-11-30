@@ -6,13 +6,13 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 21:04:43 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/26 06:14:47 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:54:08 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_checkresult(int signe)
+static int	ft_checkresult(int signe)
 {
 	if (signe == -1)
 		return (0);

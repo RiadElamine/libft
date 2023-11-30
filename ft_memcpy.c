@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 23:35:31 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/19 17:17:17 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:55:47 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
 	if (!s && !d)
-		return (0);
+		return (NULL);
 	while (i < n)
 	{
 		d[i] = s[i];

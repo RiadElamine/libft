@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 04:45:48 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/26 06:06:37 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:58:40 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,21 +37,13 @@ static int	rows(const char *s, char c)
 
 static int	column(const char *s, char c)
 {
-	int	checkend;
 	int	number_colmns;
 
-	checkend = 0;
-	while (*s && checkend == 0)
+	number_colmns = 0;
+	while (*s && *s != c)
 	{
-		number_colmns = 0;
-		s = skip_separator(s, c);
-		while (*s && *s != c)
-		{
-			number_colmns++;
-			s++;
-		}
-		if (*s == c || (*(s - 1) != c && *s == '\0'))
-			checkend = 1;
+		number_colmns++;
+		s++;
 	}
 	return (number_colmns);
 }
@@ -65,7 +57,9 @@ char	**split_str(char const *s, char c, char **s1, int row_tabtwo)
 	row = 0;
 	while (row < row_tabtwo)
 	{
+		s = skip_separator(s, c);
 		nblignes2 = column(s, c);
+		col = 0;
 		s1[row] = malloc((nblignes2 + 1) * sizeof(char));
 		if (!s1[row])
 		{
@@ -74,8 +68,6 @@ char	**split_str(char const *s, char c, char **s1, int row_tabtwo)
 			free(s1);
 			return (0);
 		}
-		col = 0;
-		s = skip_separator(s, c);
 		while (*s && *s != c)
 			s1[row][col++] = *(s++);
 		s1[row][col] = '\0';

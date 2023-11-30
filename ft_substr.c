@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 23:43:48 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/26 05:35:08 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/28 12:23:14 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t	strlen_of_start;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_strdup(""));
 	strlen_of_start = ft_strlen(&s[start]);

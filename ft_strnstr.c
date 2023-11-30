@@ -6,7 +6,7 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 23:15:57 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/17 04:37:33 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 21:01:49 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *str, const char *find, size_t len)
 	size_t	b;
 
 	if (!str && !len)
-		return (0);
+		return (NULL);
 	if (!*find)
 		return ((char *)str);
 	while (*str && len != 0)
