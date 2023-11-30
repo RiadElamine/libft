@@ -6,13 +6,13 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 12:39:01 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/17 03:06:31 by relamine         ###   ########.fr       */
+/*   Updated: 2023/12/01 00:01:19 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t size)
+void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(ptr, 0, size);
+	ft_memset(s, 0, n);
 }

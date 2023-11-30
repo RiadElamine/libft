@@ -6,13 +6,13 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 21:40:56 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/30 23:12:45 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 23:47:40 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	i;

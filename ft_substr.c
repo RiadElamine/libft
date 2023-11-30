@@ -6,13 +6,13 @@
 /*   By: relamine <relamine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 23:43:48 by relamine          #+#    #+#             */
-/*   Updated: 2023/11/28 12:23:14 by relamine         ###   ########.fr       */
+/*   Updated: 2023/11/30 23:37:27 by relamine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
 	int		size ;
