@@ -64,7 +64,7 @@ char	**split_str(char const *s, char c, char **s1, int row_tabtwo)
 		if (!s1[row])
 		{
 			while (row >= 0)
-				free(s1[row--]);
+				free(s1[--row]);
 			free(s1);
 			return (0);
 		}
