@@ -22,7 +22,7 @@ static int	ft_checkresult(int signe)
 int	ft_atoi(const char *str)
 {
 	int			signe;
-	long long	res;
+	long	res;
 
 	res = 0;
 	signe = 1;
